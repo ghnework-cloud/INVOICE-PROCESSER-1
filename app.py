@@ -178,52 +178,54 @@ if uploaded:
                 problems = double_check(groups)
 
                 if problems:
-                    st.error(f"⛔ {len(problems)} issue(s) found — output blocked")
+                    st.warning(f"⚠️ {len(problems)} issue(s) found — review below (output still generated)")
                     for p in problems:
-                        st.error(f"  {p}")
-                else:
-                    build_output_pdf(in_path, out_path, groups)
+                        st.warning(f"  {p}")
 
-                    with open(out_path, "rb") as f:
-                        pdf_bytes = f.read()
+                build_output_pdf(in_path, out_path, groups)
 
-                    os.unlink(in_path)
-                    os.unlink(out_path)
+                with open(out_path, "rb") as f:
+                    pdf_bytes = f.read()
 
-                    # Stats
-                    from pypdf import PdfReader
-                    import io
-                    pages = len(PdfReader(io.BytesIO(pdf_bytes)).pages)
+                os.unlink(in_path)
+                os.unlink(out_path)
 
-                    col1, col2, col3 = st.columns(3)
-                    with col1:
-                        st.markdown(f"""
-                        <div class="info-card" style="text-align:center">
-                          <div class="stat">{len(groups)}</div>
-                          <div class="stat-label">SHIPMENTS</div>
-                        </div>""", unsafe_allow_html=True)
-                    with col2:
-                        st.markdown(f"""
-                        <div class="info-card" style="text-align:center">
-                          <div class="stat">{pages}</div>
-                          <div class="stat-label">PAGES</div>
-                        </div>""", unsafe_allow_html=True)
-                    with col3:
-                        st.markdown(f"""
-                        <div class="info-card" style="text-align:center">
-                          <div class="stat" style="color:#22C55E">✓</div>
-                          <div class="stat-label">ZERO ISSUES</div>
-                        </div>""", unsafe_allow_html=True)
+                # Stats
+                from pypdf import PdfReader
+                import io
+                pages = len(PdfReader(io.BytesIO(pdf_bytes)).pages)
 
-                    st.success("✅  Processing complete!")
+                col1, col2, col3 = st.columns(3)
+                with col1:
+                    st.markdown(f"""
+                    <div class="info-card" style="text-align:center">
+                      <div class="stat">{len(groups)}</div>
+                      <div class="stat-label">SHIPMENTS</div>
+                    </div>""", unsafe_allow_html=True)
+                with col2:
+                    st.markdown(f"""
+                    <div class="info-card" style="text-align:center">
+                      <div class="stat">{pages}</div>
+                      <div class="stat-label">PAGES</div>
+                    </div>""", unsafe_allow_html=True)
+                with col3:
+                    issue_label = f"⚠️ {len(problems)}" if problems else "✓"
+                    issue_color = "#F59E0B" if problems else "#22C55E"
+                    st.markdown(f"""
+                    <div class="info-card" style="text-align:center">
+                      <div class="stat" style="color:{issue_color}">{issue_label}</div>
+                      <div class="stat-label">{"WARNINGS" if problems else "ZERO ISSUES"}</div>
+                    </div>""", unsafe_allow_html=True)
 
-                    out_name = Path(uploaded.name).stem + "_PROCESSED.pdf"
-                    st.download_button(
-                        label="⬇   DOWNLOAD PROCESSED PDF",
-                        data=pdf_bytes,
-                        file_name=out_name,
-                        mime="application/pdf"
-                    )
+                st.success("✅  Processing complete!")
+
+                out_name = Path(uploaded.name).stem + "_PROCESSED.pdf"
+                st.download_button(
+                    label="⬇   DOWNLOAD PROCESSED PDF",
+                    data=pdf_bytes,
+                    file_name=out_name,
+                    mime="application/pdf"
+                )
 
                 # Show log
                 st.markdown("**Log:**")
