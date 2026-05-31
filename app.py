@@ -166,8 +166,8 @@ if uploaded:
 
                 # Process
                 log_lines = []
-                labels, groups = parse_pdf(in_path)
-                log_lines.append(f"✓  Found {len(groups)} shipments ({len(labels)} label pages)")
+                reader, groups = parse_pdf(in_path)
+                log_lines.append(f"✓  Found {len(groups)} shipments ({len(reader.pages)} total pages)")
 
                 for g in groups:
                     tag = "✓" if g["confidence"] == "HIGH" else "⚠"
