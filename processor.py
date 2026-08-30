@@ -868,3 +868,10 @@ def build_output_pdf(input_path, output_path, groups):
         writer.write(f)
 
     return output_path
+    # NEW RULES 30-AUG-2026
+    (r"b0f21xll2g|cocktail.*jigger", "JIGGER SET", "home_misc"),
+    (r"b0dtk2l3q1|indian.*flag.*24.*36|ghar.*tiranga", "INDIAN FLAG", "home_misc"),
+    (r"b0h25mzfgm|bng15-mc-1p|bungee.*15.*feet", "BUNGEE 15FT", "extension_cords"),
+    (r"mvh-brc-6-ft-blkmc|bungee.*6.*feet", "BUNGEE 6FT", "extension_cords"),
+    (r"b0f3csmwz8|steel.*drying.*hanger.*25", "HANGER 25", "home_misc"),
+    (r"b0hfbxhw82|b0dnqk3zbb|myn.*8x11.*100", "MY 8x11-100PC", "bags"),
