@@ -272,28 +272,28 @@ def create_overlay(width, height, code, qty):
     doc = pymupdf.open()
     page = doc.new_page(width=width, height=height)
 
-    # Match original format: large font, bottom of page
-    box_h = 60 if qty <= 1 else 90
-    box_x0 = 0
-    box_y0 = height - box_h
-    box_w = width  # Full width
-    box_rect = pymupdf.Rect(box_x0, box_y0, box_x0 + box_w, box_y0 + box_h)
+    # EXACT original format:
+    # QTY:1 box: Rect(30, 772, 430, 822) — fixed position
+    # QTY:2 box: Rect(30, 744, 430, 822) — taller for stars
+    box_x0 = 30.0
+    box_x1 = 430.0
+    box_y1 = 822.0
+    box_y0 = 772.0 if qty <= 1 else 744.0
+    box_rect = pymupdf.Rect(box_x0, box_y0, box_x1, box_y1)
 
     # Black background
     page.draw_rect(box_rect, color=(0, 0, 0), fill=(0, 0, 0))
 
-    # Code on left — large white text (size 26 like original)
-    text_y = box_y0 + 42
+    # Code left, QTY right — size 26, white
+    text_y = box_y0 + 36
     page.insert_text((box_x0 + 10, text_y), code, fontsize=26, color=(1, 1, 1), fontname="helv")
-
-    # QTY on right — large white text
     qty_text = f"QTY: {qty}"
-    page.insert_text((box_x0 + width - 150, text_y), qty_text, fontsize=26, color=(1, 1, 1), fontname="helv")
+    page.insert_text((box_x1 - 120, text_y), qty_text, fontsize=26, color=(1, 1, 1), fontname="helv")
 
     # Yellow stars below if qty > 1
     if qty > 1:
         stars = "★" * qty
-        page.insert_text((box_x0 + 10, box_y0 + 78), stars, fontsize=28, color=(1, 1, 0), fontname="helv")
+        page.insert_text((box_x0 + 10, box_y0 + 64), stars, fontsize=24, color=(1, 1, 0), fontname="helv")
 
     buf = io.BytesIO()
     doc.save(buf)
