@@ -166,7 +166,7 @@ if uploaded:
 
                 # Process
                 log_lines = []
-                reader, groups = parse_pdf(in_path)
+                reader, groups = parse_pdf(open(in_path, 'rb').read())
                 log_lines.append(f"✓  Found {len(groups)} shipments ({len(reader.pages)} total pages)")
 
                 for g in groups:
