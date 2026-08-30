@@ -171,6 +171,9 @@ def double_check(invoices):
 
 
 def parse_pdf(pdf_bytes):
+        if isinstance(pdf_bytes, str):
+        with open(pdf_bytes, 'rb') as f:
+            pdf_bytes = f.read()
     doc = pymupdf.open(stream=pdf_bytes, filetype="pdf")
     invoices = []
     label_page = None
