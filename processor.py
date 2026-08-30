@@ -140,6 +140,20 @@ RULES = [
     ("3PIN CABLE 2.5M", ["2.5 meter electric cable cord", "3 pin wire.*tv.*cooler", "copy line.*2.5 meter.*cable", "electric cable.*3 pin.*2.5"], ["caustic", "koyla", "gasket", "courier"]),
     ("VIRGIN BAGS", ["plastic virgin bags", "multi-purpose.*food grade.*lldp", "copy line.*plastic virgin bags", "virgin bags.*food grade"], ["caustic", "koyla", "gasket", "courier"]),
     ("POD BAG 7x10", ["courier bags plain.*7x10.*50", "52 micron.*pod.*7x10", "plain.*pod.*7x10.*50"], ["caustic", "koyla", "gasket", "courier"]),
+
+    # ── MISSING RULES FIX ──────────────────────────────────────────
+    ("BUNGEE 6FT", ["mvh-brc-6-ft-blkmc", "bungee.*cord.*6.*feet", "6 feet.*bungee", "6ft.*bungee", "flexiblebungee rope.*6", "stretchable elastic rope.*cloth hanging.*6", "luggage strap bungee cord.*6", "bungee rope.*6 feet"], ["caustic", "koyla", "gasket", "courier", "15", "8ft", "15 feet"]),
+    ("K-50", ["b0f5brp99x", "6v-k4i1-tbr7", "pack of 6.*roll.*60 disc", "odourless charcoal.*bakhoor.*60", "vibrantangan.*60 disc", "60 disc.*coal", "6 roll.*60", "coal.*60 minutes.*33 mm", "lasts.*45 minutes.*60 minutes.*33 mm"], ["caustic", "koyla", "gasket", "battery", "courier", "30 disc", "100 disc"]),
+    ("SR521-5PC", ["b0f9vm6vps", "sr521sw.*5", "silver oxide.*1.55v.*5.*japan", "mercury-free.*japan.*5", "seizaiken.*sr521.*5"], ["caustic", "koyla", "gasket", "courier"]),
+    ("S-6x8-50PC", ["b0drzydt54", "polybags.*6 x 8.*50", "shipping.*packing.*6 x 8.*50", "plastic polybags.*6 x 8"], ["caustic", "koyla", "gasket", "courier"]),
+    ("POD BAG 7x10-50PC", ["courier bags plain.*7x10.*50", "52 micron.*pod.*7x10.*50", "plain.*52 micron.*7x10", "7x10.*pack of 50"], ["caustic", "koyla", "gasket", "courier"]),
+    ("KOYLA 500G", ["b0dr2pk51b", "charcoal koyla.*500gm", "koyla.*500gm", "dehumidification.*500gm", "natural wood charcoal.*500gm"], ["caustic", "gasket", "battery", "courier", "1kg"]),
+    ("KOYLA 1KG", ["b0dr2nb6z2", "charcoal koyla.*1kg", "koyla.*1kg", "dehumidification.*1kg", "natural wood charcoal.*1kg"], ["caustic", "gasket", "battery", "courier", "500gm"]),
+    ("MY 14x16-100PC", ["myn plastic courier bag 14x16", "myn.*14x16.*100", "plastic courier bag 14x16.*100", "14x16.*pack of 100", "myn.*14.*16.*100"], ["caustic", "koyla", "gasket", "courier", "11x13", "8x11"]),
+    ("S-6x8-50PC", ["b0drzydt54", "polybags.*shipping.*6 x 8", "tamper proof.*6 x 8.*50"], ["caustic", "koyla", "gasket", "courier"]),
+    ("SEAL-500PC", ["b0g64zml34", "500 seal", "postal bag sealing.*500", "garment.*sealing.*500"], ["caustic", "koyla", "gasket", "courier"]),
+    ("S-6x8-50PC", ["copy line.*courier bag.*6 x 8", "courier bag.*pod.*6.*8.*50", "polybags.*6.*8.*50"], ["caustic", "koyla", "gasket", "courier"]),
+    ("LR41-4PC", ["copy line lr41 ag3 sr41.*4", "lr41.*ag3.*sr41.*alkaline.*4", "solutions lr41.*ag3.*lr736.*4"], ["caustic", "koyla", "gasket", "courier", "25", "100"]),
 ]
 
 SORT_ORDER = [p for p, _, _ in RULES]
