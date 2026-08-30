@@ -25,7 +25,7 @@ RULES = [
 
     # Gaskets / Pressure Cooker
     ("BUTTERFLY SILICON 7.5L", ["b0g5zg5k3w", "butterfly senior 7.5 silicon", "butterfly.*7.5.*silicon", "butterfly blue line dlx", "silicone gasket.*butterfly.*7.5", "7.5 litres", "7.5 liter", "butterfly senior 7.5"], ["caustic", "koyla", "battery", "courier"]),
-    ("STAHL 5L", ["b0gd6gn8q4", "stah 5ltr", "stahl.*5.*liter", "stahl cooker 5", "stahl steel cooker.*5", "silicone gasket.*stahl.*5", "stahlcooker.*5"], ["caustic", "koyla", "battery", "courier"]),
+    ("STAHL 5L", ["b0gd6gn8q4", "stah 5ltr", "stahl.*5.*liter", "stahl cooker 5", "stahl steel cooker.*5", "silicone gasket.*stahl.*5", "stahlcooker.*5"], ["caustic", "koyla", "battery", "courier", "3 liter", "3ltr", "b0gd6qy5yp"]),
     ("STAHL 3L", ["b0gd6qy5yp", "stah 3ltr", "stahl.*3.*liter", "stahl cooker 3", "stahl steel cooker.*3", "silicone gasket.*stahl.*3", "stahl.*3 liter"], ["caustic", "koyla", "battery", "courier"]),
     ("BLUE VINOD 5L", ["b0g5z9f4f2", "blue vinod 5 ltr", "vinod 5l gasket", "outer lid.*vinod.*5", "blue line.*vinod.*5"], ["caustic", "koyla", "battery", "courier"]),
     ("SILICON VINOD 3L", ["vinod.*3l", "silicon.*vinod.*3l", "vinod.*silicon.*3l", "vinod 3 liter"], ["caustic", "koyla", "battery", "courier"]),
@@ -92,8 +92,8 @@ RULES = [
     ("ROSE GOLD LIGHTER", ["rose gold.*lighter", "lighter.*rose gold"], ["caustic", "koyla", "gasket", "courier"]),
 
     # Bags
-    ("MY 11x13-100PC", ["b0dnqh7r3c", "myn shipping courier bag 11x13", "11 x13 myt", "11x13.*myn", "myn.*11.*x.*13", "11x13.*myt", "myn.*courier.*11"], ["caustic", "koyla", "gasket", "courier", "8x11", "14x16"]),
-    ("MY 8x11-100PC", ["b0hfbxhw82", "b0dnqk3zbb", "paper courier bag 8 x11", "plastic courier bag 8x11", "8 x11.*pack of 100", "8x11.*100", "my 8x11", "courier bag.*8.*11.*100", "myn.*paper.*8.*11", "myn.*plastic.*8.*11"], ["caustic", "koyla", "gasket", "courier", "14x16", "11x13"]),
+    ("MY 11x13-100PC", ["b0dnqh7r3c", "myn shipping courier bag 11x13", "11 x13 myt", "11x13.*myn", "myn.*11.*x.*13", "11x13.*myt"], ["caustic", "koyla", "gasket", "8x11", "14x16"]),
+    ("MY 8x11-100PC", ["b0hfbxhw82", "b0dnqk3zbb", "paper courier bag 8 x11", "plastic courier bag 8x11", "8 x11.*pack of 100", "8x11.*100", "my 8x11", "myn.*paper.*8.*11", "myn.*plastic.*8.*11"], ["caustic", "koyla", "gasket", "14x16", "11x13"]),
     ("MY 13x14 + MY 14x16", ["my.*13.*x.*14.*my.*14.*x.*16", "my13x14", "my14x16", "my.*combo", "14x16.*_100", "b0dnqhmw5q.*14x16", "paper courier bag 14x16"], ["caustic", "koyla", "gasket", "courier", "11x13", "8x11"]),
     ("S-8x10=100PC", ["b0drzywpmt", "dm-glyy-u74z", "courier.*bag.*8.*x.*10.*100", "8x10.*100", "8 x 10.*100"], ["caustic", "koyla", "gasket", "courier"]),
     ("S-18x23-50PC", ["s.*18.*x.*23.*50", "18.*23.*50pc", "18x23.*bag"], ["caustic", "koyla", "gasket", "courier"]),
@@ -171,8 +171,8 @@ def double_check(invoices):
 
 
 def parse_pdf(pdf_bytes):
-        if isinstance(pdf_bytes, str):
-        with open(pdf_bytes, 'rb') as f:
+    if isinstance(pdf_bytes, str):
+        with open(pdf_bytes, "rb") as f:
             pdf_bytes = f.read()
     doc = pymupdf.open(stream=pdf_bytes, filetype="pdf")
     invoices = []
