@@ -19,7 +19,7 @@ from reportlab.lib import colors
 # ─────────────────────────────────────────────────────────────────
 RULES = [
     # Caustic Soda
-    ("C- ½ KG",   ["caustic_500gms", "caustic_500", "500gms", "500gm",
+    ("C-1/2 KG",   ["caustic_500gms", "caustic_500", "500gms", "500gm",
                    "4k-eni9-u72g", "caustic soda_500", "b0fktffljw",
                    "b0dmnw79vf", "cleaning - 500", "cleaning -500",
                    "multipurpose cleaning - 500 grams"],                        ["1kg", "1 kg", "2kg", "2 kg", "koyla", "charcoal", "gasket", "battery", "courier", "caustic soda_2kg", "caustic soda_1kg", "caustic_1kg"]),
@@ -57,7 +57,9 @@ RULES = [
 
     ("K-30",      ["3 rolls (30 discs)", "30 discs", "b0f5bs8pss", "fy-tml1-q9oa",
                    "b0f2ntp6lb", "g5-kysc-ox6m", "(30)", "b0f6jld4dw",
-                   "6i-ujhc-yc5e", "charcoal tablets for burning"],             ["caustic", "koyla", "gasket", "battery", "courier",
+                   "6i-ujhc-yc5e", "charcoal tablets for burning",
+                   "vibrantangan", "vibrant angan", "magic dhoop coal",
+                   "coal for dhoop", "odourless charcoal for dhoop incense"],             ["caustic", "koyla", "gasket", "battery", "courier",
                                                                                    "al-afandi", "50 discs", "60 discs", "100 discs", "koyla briquette"]),
     ("K-50",      ["5 rolls (50 discs)", "50 discs", "b0f2ynnx2g", "gf-f04m-k04x",
                    "b0dxfjgvnx", "bw-3s1a-y8qz", "pack of 5 roll (50 disc)",
@@ -204,14 +206,16 @@ RULES = [
     ("MY 11x13",   ["myn paper courier bag 11x13", "b0dnqksnn4",
                     "paper courier bag 11x13_250", "11x13_250"],                 ["tsb", "nsb", "caustic", "gasket", "8x11", "13x14", "14x16", "17x22"]),
     ("MY 13x14",   ["myn paper courier bag 13x14", "paper courier bag 13x14 _"],["tsb", "nsb", "caustic", "gasket", "8x11", "11x13", "14x16", "17x22"]),
-    ("MY 14x16",   ["myn paper courier bag 14x16", "b0dnqhmw5q", "14x16 _100",
+    ("MY 14x16 = 100PC",   ["myn paper courier bag 14x16", "b0dnqhmw5q", "14x16 _100",
                     "b0dnqjrn8y", "paper courier bag 14x16_250"],               ["tsb", "nsb", "caustic", "gasket", "8x11", "13x14", "17x22", "11x13"]),
     ("MY 17x22",   ["myn paper courier bag 17x22", "b0dnqkpvrw", "17x 22 )"],   ["tsb", "nsb", "caustic", "gasket", "8x11", "13x14", "14x16", "11x13"]),
 
     # General courier bags (S- size = PC) - use exact unique SKU codes/size strings
     ("S- 7x10 = PC",  ["ed-l4r5", "(100, 7 x 10)", "7 x 10)"],                  ["tsb", "nsb", "myn", "flipkart", "flip-kart", "50, 7 x 10"]),
     ("S- 7x10 - 50PC",["b0drzz8rv1", "ed-l4r5-nydz", "(50, 7 x 10)",
-                       "b0dp7msjxf", "courier bags with pod 7x10_50"],          ["tsb", "nsb", "myn", "flipkart", "flip-kart"]),
+                       "b0dp7msjxf", "courier bags with pod 7x10_50",
+                       "courier bag/envelopes/pouches", "copy line courier bag",
+                       "with pod temper", "pouches/cover | with pod"],          ["tsb", "nsb", "myn", "flipkart", "flip-kart"]),
     ("AMAZON 6x8 - 100PC", ["px-j96o-ul5p", "b0ds15lfk7",
                              "amazon branded printed economy shipping"],         ["tsb", "nsb", "myn", "flipkart", "flip-kart"]),
     ("6x8 = PC",      ["(6 x 8 single)", "px-j960 "],                           ["tsb", "nsb", "myn", "flipkart", "flip-kart",
@@ -271,6 +275,7 @@ RULES = [
                        "lithium coin battery"],                                   ["lr1130", "sr416", "sr936", "lr44", "27a_alkaline", "27ae", "caustic", "gasket", "courier"]),
     ("1130 = 25PC",   ["lr1130", "sr616sw", "ag10 189",
                        "lr41 ag3", "321 silver oxide",
+                       "copy line lr41", "lr41 ag3 sr41",
                        "b0f6ysgpm9", "b0f9vmh4gt",
                        "b0dz2mmw4r", "qcg lr1130"],                             ["27a_alkaline", "23a 12v", "caustic", "gasket", "courier", "bungee",
                                                                                   "sr416sw", "sr936sw", "337 silver", "394 silver"]),
@@ -314,7 +319,9 @@ RULES = [
 
     # Security seal
     ("SEAL - 100PC",  ["plastic security seal", "b0g64v94d8", "100 seal )",
-                       "postal bag sealing", "garment, postal"],                ["caustic", "gasket", "battery", "bungee"]),
+                       "postal bag sealing", "garment, postal",
+                       "yellow, 6 inch length", "courier tag, sample",
+                       "security seal, yellow"],                ["caustic", "gasket", "battery", "bungee"]),
 
     # Kapoor Dani
     ("KAPOOR DANI",   ["kapoor dani", "camphor diffuser", "kapur diffuser",
@@ -350,7 +357,9 @@ RULES = [
                        "bungee cord | ropes with hooks (8 feet)"],               ["caustic", "gasket", "battery", "courier", "10 feet",
                                                                                     "12 feet", "15 feet", "6 feet", "(5 ft)", "multicolour"]),
     ("B- 6FT = PC",   ["b0gknqtqjj", "gj-6djh-32uf", "(6 feet) pack",
-                       "6 feet) | b0gk", "b0dt6bj733", "rp4 )"],                ["caustic", "gasket", "battery", "courier", "10 feet",
+                       "6 feet) | b0gk", "b0dt6bj733", "rp4 )",
+                       "b0h25x4rrk", "mvh-brc-6-ft", "mvh ecom flexible",
+                       "stretchable elastic rope", "(6 feet) |"],                ["caustic", "gasket", "battery", "courier", "10 feet",
                                                                                     "12 feet", "15 feet", "5 ft", "multicolour"]),
     ("B- 10FT - 2PC", ["b0f38h2ktg", "10ft ropes black colour_2"],              ["caustic", "gasket", "battery", "courier",
                                                                                    "12 feet", "15 feet", "(5 ft)", "multicolour"]),
@@ -665,7 +674,7 @@ def double_check(groups):
 
 
 SORT_ORDER = [
-    'C- ½ KG', 'C- 1KG', 'C- 2KG',
+    'C-1/2 KG', 'C- 1KG', 'C- 2KG',
     'SALT 900g', 'SALT 990g', 'SALT 900g/990g', '2KG SALT',
     'AFANDI 96', 'YELLOW - 30', 'YELLOW - 50', 'YELLOW - 100',
     'K-30', 'K-50', 'K-60', 'K-100', 'K 2KG',
