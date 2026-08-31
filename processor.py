@@ -102,10 +102,12 @@ RULES = [
 
     # Silicon 777 - Pigeon silicon OR generic silicon OR Stahl
     # SILICON 77 - Pigeon silicon AND Stahl silicone gasket
+    ("STAHL 5L",     ["b0gd6gn8q4", "stah 5ltr", "stahl steel cooker perfect fit, (only for stahlcooker) (5 liter)",
+                       "only for stahlcooker) (5 liter"],                       ["3 liter", "3ltr", "butterfly", "prestige", "pigeon", "caustic"]),
+    ("STAHL 3L",     ["b0gd6qy5yp", "stah 3ltr", "stahl steel cooker perfect fit, (only for stahlcooker) (3 liter)",
+                       "only for stahlcooker) (3 liter", "stahl steel cooker 3"],["5 liter", "5ltr", "butterfly", "prestige", "pigeon", "caustic"]),
     ("SILICON 77",  ["b0gbvl1l8w", "silicon 77 )", "only for pigeon aluminium",
-                     "pigeon aluminium pressure cooker",
-                     "stahl steel cooker", "b0gd6qy5yp", "stahlcooker",
-                     "only for stahlcooker"],                                    ["butterfly", "prestige triply", "svachh outer lid", "vinod",
+                     "pigeon aluminium pressure cooker"],                                    ["butterfly", "prestige triply", "svachh outer lid", "vinod",
                                                                                   "b0gxdh6fpk", "8o-tp5g"]),
 
     # Prestige gaskets
@@ -711,7 +713,7 @@ SORT_ORDER = [
     'K-30', 'K-50', 'K-60', 'K-100', 'K 2KG',
     '12 CLIPS', '36 STEEL CLIPS', '18 STEEL CLIPS',
     'K ½ KG',
-    '77', 'SILICON 77', 'SILICON 777',
+    '77', 'STAHL 5L', 'STAHL 3L', 'SILICON 77', 'SILICON 777',
     'PRESTIGE HANDI 2L', 'PRESTIGE 4L', 'PRESTIGE 8L', 'PRESTIGE TRIPLY 3L', 'PRESTIGE TRIPLY 5L',
     'POPULAR 4/5', '1.5 - 2PC',
     'SURYA 3L', 'SURYA 4-5L',
