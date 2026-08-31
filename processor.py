@@ -45,8 +45,9 @@ RULES = [
 
     # Dhoop / VibrantAngan coal — split by disc count
     # Yellow VibrantAngan coal series (different packaging from K series)
-    ("YELLOW - 30",  ["b0f2ybp3mq", "n0-i890-y72k",
-                      "bakhoor dani magic coal pack of 3 rolls (30 discs)"],     ["caustic", "koyla", "gasket", "battery", "courier",
+    ("YELLOW - 30",  ["b0f2ybp3mq", "n0-i890-y72k", "b0fdgf8jr5", "a6-wc4l-oau2",
+                      "bakhoor dani magic coal pack of 3 rolls (30 discs)",
+                      "pack of 3 rolls", "45+ minutes burn", "long burning coal for dhoop"],     ["caustic", "koyla", "gasket", "battery", "courier",
                                                                                    "b0f2ynnx2g", "b0f2y75m27", "b0f5bs8pss", "b0f2ntp6lb"]),
     ("YELLOW - 50",  ["b0f2ynnx2g", "gf-f04m-k04x",
                       "bakhoor dani magic coal pack of 5"],                       ["caustic", "koyla", "gasket", "battery", "courier",
