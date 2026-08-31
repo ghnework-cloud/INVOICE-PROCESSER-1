@@ -87,6 +87,8 @@ RULES = [
     # Steel clips
     ("36 STEEL CLIPS", ["steel clip", "36 pc", "steel clips", "36pc",
                         "b0dr28s1pw", "steel 36 clip"],                          ["caustic", "koyla", "gasket", "battery", "courier", "18 clips", "18pc", "clip 18"]),
+    ("12 CLIPS",       ["mvh ecom cloth drying pegs", "cloth drying pegs", "drying pegs",
+                       "stainless steel pegs", "heavy duty & stainless steel"],  ["caustic", "gasket", "battery", "courier", "bungee"]),
     ("18 STEEL CLIPS", ["18 clips", "18pc", "b0dr26c6yj", "clip 18",
                         "cloth clips", "18 clip"],                               ["caustic", "koyla", "gasket", "battery", "courier", "36 pc", "36pc"]),
 
@@ -163,6 +165,8 @@ RULES = [
 
     # Vinod gaskets
     ("VINOD HANDI 1.5L", ["vinod splendid plus handi", "b0g72fs1l1",
+                        "silicon gasket for 1.5 liter vinod",
+                        "silicon gasket for 1.5 litre vinod splendid",
                            "vinod handi 1.5", "handi vinod 1.5"],               ["butterfly", "prestige", "pigeon", "popular", "caustic",
                                                                                   "3 litre", "vibrantangan", "dhoop", "coal", "2.5"]),
     ("VINOD HANDI 2.5L", ["vinod plus handi cooker", "b0g71hxgrx",
@@ -204,6 +208,7 @@ RULES = [
     # Myntra / MYN bags — single size
     ("MY 8x11",    ["myn paper courier bag 8x11", "8x 11 )"],                    ["tsb", "nsb", "caustic", "gasket", "13x14", "14x18", "14x16", "17x22", "11x13"]),
     ("MY 11x13",   ["myn paper courier bag 11x13", "b0dnqksnn4",
+                    "11 x13 myt", "11x13 myt",
                     "paper courier bag 11x13_250", "11x13_250"],                 ["tsb", "nsb", "caustic", "gasket", "8x11", "13x14", "14x16", "17x22"]),
     ("MY 13x14",   ["myn paper courier bag 13x14", "paper courier bag 13x14 _"],["tsb", "nsb", "caustic", "gasket", "8x11", "11x13", "14x16", "17x22"]),
     ("MY 14x16 = 100PC",   ["myn paper courier bag 14x16", "b0dnqhmw5q", "14x16 _100",
@@ -258,6 +263,9 @@ RULES = [
     ("S- 18x23 - 50PC", ["b0drzz46s8", "e4-g9bh-btz3", "(50, 18 x 23)",
                           "18 x 23)"],                                           ["tsb", "nsb", "myn", "flipkart", "flip-kart"]),
     ("S- 18x23 = PC", ["e4-g9bh", "(50, 18 x 23)", "e4-g9bh-btz"],             ["tsb", "nsb", "myn", "flipkart", "flip-kart", "b0drzz46s8"]),
+
+    ("MARLEX 11 LTR",  ["marlex", "replacement gasket seal for marlex",
+                       "11ltr", "13.5 ltr", "16ltr", "marlex size"],            ["caustic", "battery", "courier", "bungee"]),
 
     # Batteries — 27A and 23A are different products, separate codes
     ("27 A = 2PC",    ["b0fd7m5vb4", "27a 2pc_n", "27a, 2 pack",
@@ -340,6 +348,8 @@ RULES = [
                                                                                    "multicolour, 5", "multicolour, 2"]),
     ("MULTI - 2 - 7FT",  ["b0dp4g3ngj", "mu-hihm-xn2l", "(2, black, 7 ft)",
                            "2, black, 7 ft"],                                    ["caustic", "gasket", "battery", "courier", "10 ft", "15 ft"]),
+    ("B-6-4PC",          ["bungee rope set", "stretchable drying rope with hooks",
+                       "multicolour", "rope set,", "set, stretchable"],         ["caustic", "gasket", "battery", "courier", "12 feet", "15 feet", "10 feet"]),
     ("MULTI - 6 - 5FT",  ["b0dp4d9bq3", "or-ausm-ic2b", "(6, black, 5 ft)",
                            "6, black, 5 ft"],                                    ["caustic", "gasket", "battery", "courier", "10 ft", "15 ft"]),
     ("MULTI - 6 - 6PC", ["(6, multicolour, 5 ft)", "96-kdpz-g5zq",
@@ -459,6 +469,9 @@ RULES = [
     # 3 Pin plug
     ("3PIN PLUG",     ["3-pin type d indian socket", "multi-pin conversion plug",
                         "b0dydscvx4", "n7-hjxo-25zv", "type d", "6a 240v"],    ["caustic", "gasket", "battery", "courier"]),
+
+    ("MARLEX 11 LTR",  ["marlex", "replacement gasket seal for marlex",
+                       "11ltr", "13.5 ltr", "16ltr", "marlex size"],            ["caustic", "battery", "courier", "bungee"]),
 
     # Batteries — SR521SW 379
     ("521 = 2PC + 626 = 5PC", ["b0dphdwtl1", "seizaiken sr626sw 3"],            ["lr1130", "sr416", "sr936", "caustic", "gasket", "courier"]),
@@ -678,7 +691,7 @@ SORT_ORDER = [
     'SALT 900g', 'SALT 990g', 'SALT 900g/990g', '2KG SALT',
     'AFANDI 96', 'YELLOW - 30', 'YELLOW - 50', 'YELLOW - 100',
     'K-30', 'K-50', 'K-60', 'K-100', 'K 2KG',
-    '36 STEEL CLIPS', '18 STEEL CLIPS',
+    '12 CLIPS', '36 STEEL CLIPS', '18 STEEL CLIPS',
     'K ½ KG',
     '77', 'SILICON 77', 'SILICON 777',
     'PRESTIGE HANDI 2L', 'PRESTIGE 4L', 'PRESTIGE 8L', 'PRESTIGE TRIPLY 3L', 'PRESTIGE TRIPLY 5L',
@@ -704,7 +717,7 @@ SORT_ORDER = [
     '2032 = 2PC', '2430 = 2PC',
     'B- 5FT = PC', 'B- 6FT = PC', 'B- 8FT = PC', 'B- 10FT = PC', 'B- 10FT - 2PC', 'B- 12FT = PC',
     'B-12-1PC', 'B-12-2PC', 'B- 12FT + 15FT', 'B- 15FT = PC', 'B- 15FT - 2PC',
-    'MULTI - 6 - 5FT', 'MULTI - 2 - 7FT', 'MULTI - 6 - 6PC', 'MULTI - 2 - 10FT', 'MULTI - 6 - 10FT', 'MULTI - 10FT - 4PC',
+    'B-6-4PC', 'MULTI - 6 - 5FT', 'MULTI - 2 - 7FT', 'MULTI - 6 - 6PC', 'MULTI - 2 - 10FT', 'MULTI - 6 - 10FT', 'MULTI - 10FT - 4PC',
     'MULTI - 6 - 15FT', 'MULTI - 3M - 2PC', 'MULTI - 6FT - 2PC',
     'IRON CORD', 'MIXER WIRE', 'FLIPKART TAPE', 'YELLOW VASTU TAPE',
     'CAPACITOR 2.5MFD', 'CAPACITOR 3.15MFD', 'CAPACITOR 4MFD',
@@ -715,7 +728,7 @@ SORT_ORDER = [
     'WA', 'GAS PIPE', 'PLUMBER LONGLIFE', 'FTA - 4PC', '3PIN PLUG', 'SAFETY VALVE',
     'ADAPTER HOLDER', 'KAPOOR DANI', 'WHITE STRING', 'ROSE GOLD LIGHTER',
     'BONDI JAHARA', 'MIXER COUPLER', 'SQUARE SHOWER', 'THERMAL ROLL',
-    'FTA', 'HALF TURN SPINDLE', 'MISC', 'UNCLASSIFIED',
+    'FTA', 'HALF TURN SPINDLE', 'MARLEX 11 LTR', 'MISC', 'UNCLASSIFIED',
 ]
 
 
