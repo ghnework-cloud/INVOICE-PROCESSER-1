@@ -128,6 +128,7 @@ RULES = [
                        "prestige popular 4/5/6 "],                               ["butterfly", "vinod", "pigeon", "caustic",
                                                                                    "triply", "silicon", "8 litre", "handi", "surya"]),
     ("1.5 - 2PC",     ["b0f9vk3dby", "1.5 liter inner lid 2 pc", "1.5 litre capacity",
+                       "rubber gasket, 13 cm", "13 cm inner lid", "pack of 2, black",
                        "hawkiins", "hawkins", "13 cm inner lid"],                ["butterfly", "vinod", "pigeon", "popular", "caustic",
                                                                                    "silicon", "triply", "3 liter", "5 litre"]),
     ("SILICON VINOD 3L", ["b0gdqc9y8t", "silicon outer lid rubber gasket compatible for 3 litre vinod",
@@ -208,7 +209,7 @@ RULES = [
                               "11x13_250 ) \nhsn"],                              ["tsb", "nsb", "caustic", "gasket", "17x22"]),
 
     # Myntra / MYN bags — single size
-    ("MY 8x11",    ["myn paper courier bag 8x11", "8x 11 )"],                    ["tsb", "nsb", "caustic", "gasket", "13x14", "14x18", "14x16", "17x22", "11x13"]),
+    ("MY 8x11",    ["myn paper courier bag 8x11", "8x 11 )", "b0hfbxhw52", "my 8x 11 pvc"],                    ["tsb", "nsb", "caustic", "gasket", "13x14", "14x18", "14x16", "17x22", "11x13"]),
     ("MY 11x13",   ["myn paper courier bag 11x13", "b0dnqksnn4",
                     "11 x13 myt", "11x13 myt",
                     "paper courier bag 11x13_250", "11x13_250"],                 ["tsb", "nsb", "caustic", "gasket", "8x11", "13x14", "14x16", "17x22"]),
