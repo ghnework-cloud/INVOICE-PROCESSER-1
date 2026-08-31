@@ -283,6 +283,9 @@ RULES = [
                        "lr 44 ag 13", "tray packing_25b", "ag13"],              ["lr1130", "sr416", "sr936", "27a_alkaline", "27ae", "caustic", "gasket", "courier"]),
     ("1632 = 2PC",    ["cr-1632", "cr1632", "b0f2smqshs",
                        "lithium coin battery"],                                   ["lr1130", "sr416", "sr936", "lr44", "27a_alkaline", "27ae", "caustic", "gasket", "courier"]),
+    ("LR41 = 4PC",    ["b0dz2mmw4r", "dx-vg7v-7uo1", "lr41 ag3 lr736 392",
+                       "lr41 battery ag3", "sr41 1.5v alkaline button coin cell electronics",
+                       "thermometer (4)"],                                       ["lr1130", "sr616sw", "ag10", "27a", "23a", "caustic", "gasket", "courier"]),
     ("1130 = 25PC",   ["lr1130", "sr616sw", "ag10 189",
                        "lr41 ag3", "321 silver oxide",
                        "copy line lr41", "lr41 ag3 sr41",
@@ -505,6 +508,9 @@ RULES = [
     ("FTA",           ["b0fdwydjry", "tap aerator", "water tap aerator",
                        "foam flow", "brass regular 22 mm", "female-outer thread",
                        "female-inner thread", "22mm water tap"],               ["caustic", "gasket", "battery", "courier"]),
+    ("GARBAGE BAG",   ["garbage bag", "dustbin bag", "b0fj8854qx", "65-0lnz-4z18",
+                       "trash bag", "disposable trash", "19x21", "waste bag",
+                       "dustbin bags for home"],                                 ["caustic", "gasket", "battery", "courier", "bungee"]),
     ("BRUSH",         ["brush", "scrub brush", "cleaning brush", "dish brush",
                        "screen brush", "mesh cleaning brush", "toilet brush",
                        "bottle brush", "floor brush", "wash brush"],            ["caustic", "gasket", "battery", "courier", "bungee"]),
@@ -716,7 +722,7 @@ SORT_ORDER = [
     'MY 8x11', 'MY 11x13', 'MY 11x13 - 50PC', 'MY 11x13 + MY 14x16',
     'MY 13x14', 'MY 13x14 + MY 14x16', 'MY 14x16', 'MY 14x16 + MY 17x22', 'MY 17x22',
     'MILK BAG 6X9', 'SEAL - 100PC',
-    '27 A = 2PC', '27 A = 5PC', '23 A', '1130 = 25PC', '416 = 5PC', 'SR936 = 5PC',
+    '27 A = 2PC', '27 A = 5PC', '23 A', 'LR41 = 4PC', '1130 = 25PC', '416 = 5PC', 'SR936 = 5PC',
     'LR41 = 10PC', 'LR44 = 25PC', '521 = 5PC', '521 = 2PC', '521 = 2PC + 626 = 5PC',
     '626 = 2PC', '626 = 5PC', '1632 = 2PC', '1616 = 2PC', '721 = 2PC', '916 = 2PC', '920 = 2PC', '927 = 2PC',
     '2032 = 2PC', '2430 = 2PC',
@@ -733,7 +739,7 @@ SORT_ORDER = [
     'WA', 'GAS PIPE', 'PLUMBER LONGLIFE', 'FTA - 4PC', '3PIN PLUG', 'SAFETY VALVE',
     'ADAPTER HOLDER', 'KAPOOR DANI', 'WHITE STRING', 'ROSE GOLD LIGHTER',
     'BONDI JAHARA', 'MIXER COUPLER', 'SQUARE SHOWER', 'THERMAL ROLL',
-    'FTA', 'HALF TURN SPINDLE', 'MARLEX 11 LTR', 'BRUSH', 'MISC', 'UNCLASSIFIED',
+    'FTA', 'HALF TURN SPINDLE', 'MARLEX 11 LTR', 'GARBAGE BAG', 'BRUSH', 'MISC', 'UNCLASSIFIED',
 ]
 
 
