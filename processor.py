@@ -503,6 +503,9 @@ RULES = [
     ("FTA",           ["b0fdwydjry", "tap aerator", "water tap aerator",
                        "foam flow", "brass regular 22 mm", "female-outer thread",
                        "female-inner thread", "22mm water tap"],               ["caustic", "gasket", "battery", "courier"]),
+    ("BRUSH",         ["brush", "scrub brush", "cleaning brush", "dish brush",
+                       "screen brush", "mesh cleaning brush", "toilet brush",
+                       "bottle brush", "floor brush", "wash brush"],            ["caustic", "gasket", "battery", "courier", "bungee"]),
     ("MISC",          ["screen brush", "mosquito net", "mesh cleaning brush",
                        "b0gkqnc8l8", "24-bta0-8tio", "tap aerator",
                        "water tap aerator", "b0fdwydjry", "foam flow",
@@ -728,7 +731,7 @@ SORT_ORDER = [
     'WA', 'GAS PIPE', 'PLUMBER LONGLIFE', 'FTA - 4PC', '3PIN PLUG', 'SAFETY VALVE',
     'ADAPTER HOLDER', 'KAPOOR DANI', 'WHITE STRING', 'ROSE GOLD LIGHTER',
     'BONDI JAHARA', 'MIXER COUPLER', 'SQUARE SHOWER', 'THERMAL ROLL',
-    'FTA', 'HALF TURN SPINDLE', 'MARLEX 11 LTR', 'MISC', 'UNCLASSIFIED',
+    'FTA', 'HALF TURN SPINDLE', 'MARLEX 11 LTR', 'BRUSH', 'MISC', 'UNCLASSIFIED',
 ]
 
 
