@@ -63,7 +63,7 @@ RULES = [
                                                                                    "al-afandi", "50 discs", "60 discs", "100 discs", "koyla briquette"]),
     ("K-50",      ["5 rolls (50 discs)", "50 discs", "b0f2ynnx2g", "gf-f04m-k04x",
                    "b0dxfjgvnx", "bw-3s1a-y8qz", "pack of 5 roll (50 disc)",
-                   "b0f2p1529f", "mc 60", "charcoal discs of 33 mm size(50)",
+                   "b0f2p1529f", "charcoal discs of 33 mm size(50)", "size(50)",
                    "50 disc)", "b0f2p1529f", "mc 60 )",
                    "b0dxfjlbmv", "t4-ol45-m6pl", "odourless coal discs",
                    "b0f1y28tbv", "o5-dnoq-p6di", "hookah charcoal briquettes",
