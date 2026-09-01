@@ -102,7 +102,7 @@ RULES = [
 
     # Silicon 777 - Pigeon silicon OR generic silicon OR Stahl
     # SILICON 77 - Pigeon silicon AND Stahl silicone gasket
-    ("STAHL 5L",     ["b0gd6gn8q4", "stah 5ltr", "stahl steel cooker perfect fit, (only for stahlcooker) (5 liter)",
+    ("STAHL 5L",     ["b0gd6gn8q4", "b0gd6k9hns", "stah 5ltr", "stahl steel cooker perfect fit, (only for stahlcooker) (5 liter)",
                        "only for stahlcooker) (5 liter"],                       ["3 liter", "3ltr", "butterfly", "prestige", "pigeon", "caustic"]),
     ("STAHL 3L",     ["b0gd6qy5yp", "stah 3ltr", "stahl steel cooker perfect fit, (only for stahlcooker) (3 liter)",
                        "only for stahlcooker) (3 liter", "stahl steel cooker 3"],["5 liter", "5ltr", "butterfly", "prestige", "pigeon", "caustic"]),
@@ -185,7 +185,8 @@ RULES = [
                     "silicon outer lid rubber gasket compatible for 3 litre vinod",
                     "b0h1f7pfzg", "blue vinod 3ltr"],                            ["butterfly", "prestige", "pigeon", "popular", "caustic",
                                                                                   "handi", "vibrantangan", "dhoop", "coal"]),
-    ("VINOD 5L",   ["b0g5z9f4f2", "blue vinod 5", "vinod stainless steel pressure cooker, 5l",
+    ("VINOD 5L",   ["b0g5z9f4f2", "blue vinod 5", "vinod 5l",
+                    "stainless steel outer lid pressure cooker 5", "vinod stainless steel pressure cooker, 5l",
                     "only for steel cooker", "blue vinod 5 ltr"],               ["butterfly", "prestige", "pigeon", "popular", "caustic",
                                                                                   "handi", "3 litre", "3l", "vibrantangan", "dhoop", "coal"]),
 
@@ -388,6 +389,7 @@ RULES = [
                        "bungee cord | ropes with hooks (8 feet)"],               ["caustic", "gasket", "battery", "courier", "10 feet",
                                                                                     "12 feet", "15 feet", "6 feet", "(5 ft)", "multicolour"]),
     ("B- 6FT = PC",   ["b0gknqtqjj", "gj-6djh-32uf", "(6 feet) pack",
+                       "b0h25mzfgm",
                        "6 feet) | b0gk", "b0dt6bj733", "rp4 )",
                        "b0h25x4rrk", "mvh-brc-6-ft", "mvh ecom flexible",
                        "stretchable elastic rope", "(6 feet) |"],                ["caustic", "gasket", "battery", "courier", "10 feet",
