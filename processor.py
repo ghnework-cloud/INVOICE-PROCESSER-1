@@ -133,6 +133,8 @@ RULES = [
                                                                                    "triply", "silicon", "8 litre", "handi", "surya"]),
     ("1.5 - 2PC",     ["b0f9vk3dby", "1.5 liter inner lid 2 pc", "1.5 litre capacity",
                        "rubber gasket, 13 cm", "13 cm inner lid", "pack of 2, black",
+                       "1.5 liter inner lid", "not suitable for black hawkiins",
+                       "1.5 litre capacity, pack of 2",
                        "hawkiins", "hawkins", "13 cm inner lid"],                ["butterfly", "vinod", "pigeon", "popular", "caustic",
                                                                                    "silicon", "triply", "3 liter", "5 litre"]),
     ("SILICON VINOD 3L", ["b0gdqc9y8t", "silicon outer lid rubber gasket compatible for 3 litre vinod",
