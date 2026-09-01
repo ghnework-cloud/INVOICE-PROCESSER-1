@@ -169,7 +169,7 @@ RULES = [
                                                                                   "vinod", "stahl", "b0f9vlrwcs"]),
     ("777",        ["popular", "rubber gasket", "outer lid rubber",
                     "butterfly standard", "butteerfly standard",
-                    "hawkiins", "inner lid", "7.5 litre",
+                    "hawkiins", "7.5 litre",
                     "butterfly 10liter", "prestige 777"],                        ["silicon", "silicone", "pigeon", "piigeon", "b0f9vlrwcs", "prestige triply", "stahl"]),
 
     # Vinod gaskets
