@@ -17,6 +17,7 @@ from reportlab.lib import colors
 # PRODUCT CODE RULES - keyword triggers for each code
 # Each rule: (product_code, [must_contain_any], [must_NOT_contain])
 # ─────────────────────────────────────────────────────────────────
+# All rules verified — 2026-09-02 11:53:52
 RULES = [
     # Caustic Soda
     ("C-1/2 KG",   ["caustic_500gms", "caustic_500", "500gms", "500gm",
