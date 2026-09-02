@@ -117,7 +117,7 @@ RULES = [
                        "8 liter fits only prestige",
                        "stainless steel pressure cooker for 8"],                 ["butterfly", "vinod", "pigeon", "popular", "caustic",
                                                                                   "triply", "5 litre", "3 litre", "2 litre"]),
-    ("PRESTIGE HANDI 2L", ["prestige baby handi", "b0g8kqjcfr",
+    ("PRESTIGE HANDI 2L", ["b0f895whgd", "b0g4jqt98j", "prestige baby handi", "b0g8kqjcfr",
                             "prestige baby handi pressure cooker gasket",
                             "baby handi"],                                       ["butterfly", "vinod", "pigeon", "popular", "caustic",
                                                                                    "triply", "5 litre", "3 litre"]),
@@ -159,6 +159,7 @@ RULES = [
     ("77", ["b0h2vf6z3v", "butterfly legacy", "butterfly legacy aluminium",
                                "outer lid rubber gasket, 24 cm, for 5 litre"],  ["silicon", "silicone", "pigeon", "prestige", "vinod", "stahl"]),
     ("BUTTERFLY SILICON 5L",  ["5&5.5 litre butterfly", "5 litre butterfly",
+                               "b0fxy3gtym", "b0fxy5cmvn", "5&5.5 litre butterfly silicon",
                                 "b0fxy3gtym", "b0gxdqn8fk",
                                 "5&5.5 litre butterfly "],                       ["rubber", "10 litre", "vinod", "pigeon",
                                                                                    "2-3", "2litre", "3litre"]),
@@ -170,7 +171,7 @@ RULES = [
     ("777",        ["popular", "rubber gasket", "outer lid rubber",
                     "butterfly standard", "butteerfly standard",
                     "hawkiins", "7.5 litre",
-                    "butterfly 10liter", "prestige 777"],                        ["silicon", "silicone", "pigeon", "piigeon", "b0f9vlrwcs", "prestige triply", "stahl"]),
+                    "butterfly 10liter", "prestige 777"],                        ["silicon", "silicone", "pigeon", "piigeon", "b0f9vlrwcs", "prestige triply", "stahl", "b0f9vk3dby"]),
 
     # Vinod gaskets
     ("VINOD HANDI 1.5L", ["vinod splendid plus handi", "b0g72fs1l1", "b0g72fb1l1",
@@ -221,7 +222,7 @@ RULES = [
     # Myntra / MYN bags — single size
     ("MY 8x11",    ["myn paper courier bag 8x11", "8x 11 )", "b0hfbxhw52", "my 8x 11 pvc",
                       "b0dnqk8z8b", "paper courier bag 8x11 _100", "myn plastic courier bag 8x11"],                    ["tsb", "nsb", "caustic", "gasket", "13x14", "14x18", "14x16", "17x22", "11x13"]),
-    ("MY 11x13",   ["myn paper courier bag 11x13", "b0dnqksnn4",
+    ("MY 11x13",   ["myn paper courier bag 11x13", "b0dnqksnn4", "b0dnqh7r3c",
                     "11 x13 myt", "11x13 myt",
                     "paper courier bag 11x13_250", "11x13_250"],                 ["tsb", "nsb", "caustic", "gasket", "8x11", "13x14", "14x16", "17x22"]),
     ("MY 13x14",   ["myn paper courier bag 13x14", "paper courier bag 13x14 _"],["tsb", "nsb", "caustic", "gasket", "8x11", "11x13", "14x16", "17x22"]),
