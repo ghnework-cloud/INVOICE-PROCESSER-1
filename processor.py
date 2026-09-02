@@ -219,7 +219,8 @@ RULES = [
                               "11x13_250 ) \nhsn"],                              ["tsb", "nsb", "caustic", "gasket", "17x22"]),
 
     # Myntra / MYN bags — single size
-    ("MY 8x11",    ["myn paper courier bag 8x11", "8x 11 )", "b0hfbxhw52", "my 8x 11 pvc"],                    ["tsb", "nsb", "caustic", "gasket", "13x14", "14x18", "14x16", "17x22", "11x13"]),
+    ("MY 8x11",    ["myn paper courier bag 8x11", "8x 11 )", "b0hfbxhw52", "my 8x 11 pvc",
+                      "b0dnqk8z8b", "paper courier bag 8x11 _100", "myn plastic courier bag 8x11"],                    ["tsb", "nsb", "caustic", "gasket", "13x14", "14x18", "14x16", "17x22", "11x13"]),
     ("MY 11x13",   ["myn paper courier bag 11x13", "b0dnqksnn4",
                     "11 x13 myt", "11x13 myt",
                     "paper courier bag 11x13_250", "11x13_250"],                 ["tsb", "nsb", "caustic", "gasket", "8x11", "13x14", "14x16", "17x22"]),
@@ -423,7 +424,8 @@ RULES = [
                         "uz-epop-08n5", "(2, black, 15 ft)"],                   ["caustic", "gasket", "battery", "courier", "10 feet",
                                                                                    "12 feet", "6 feet", "(5 ft)", "multicolour_4", "pack 1",
                                                                                    "(6, black", "(6, multicolour", "b0dp4d5nnl"]),
-    ("B- 15FT = PC",  ["b0grvfz41v", "5k-pec0-13td", "15ft ropes black colour_1",
+    ("B- 15FT = PC",  ["b0grvfz41v", "5k-pec0-13td", "b0h25mzfgm", "b0gynr911m",
+                        "b0h25nbn4c", "bng10-mc-1p", "15 feet) |", "15ft ropes black colour_1",
                        "b0gynr911m", "mr-b6x5-6eko", "pack 1 |",
                        "(15 feet) pack of (1)"],                                 ["caustic", "gasket", "battery", "courier", "10 feet",
                                                                                     "12 feet", "12 ft", "6 feet", "(5 ft)", "pack 2",
