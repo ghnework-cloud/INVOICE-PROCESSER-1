@@ -156,6 +156,8 @@ if uploaded:
     if st.button("⚡   PROCESS INVOICES"):
         with st.spinner("Processing…"):
             try:
+                import importlib, processor as _proc_mod
+                importlib.reload(_proc_mod)
                 from processor import parse_pdf, build_output_pdf, double_check
 
                 # Save uploaded PDF to temp file
