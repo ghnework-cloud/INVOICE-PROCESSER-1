@@ -103,9 +103,9 @@ RULES = [
 
     # Silicon 777 - Pigeon silicon OR generic silicon OR Stahl
     # SILICON 77 - Pigeon silicon AND Stahl silicone gasket
-    ("STAHL 5L",     ["b0gd6gn8q4", "b0gd6k9hns", "stah 5ltr", "stahl steel cooker perfect fit, (only for stahlcooker) (5 liter)",
+    ("STAHL 5L",     ["b0gd6gn8q4", "b0gd6k9hns", "b0gd679qk1", "stah 5ltr", "stahl steel cooker perfect fit, (only for stahlcooker) (5 liter)",
                        "only for stahlcooker) (5 liter"],                       ["3 liter", "3ltr", "butterfly", "prestige", "pigeon", "caustic"]),
-    ("STAHL 3L",     ["b0gd6qy5yp", "stah 3ltr", "stahl steel cooker perfect fit, (only for stahlcooker) (3 liter)",
+    ("STAHL 3L",     ["b0gd6qy5yp", "b0h33vfwfc", "stah 3ltr", "stahl steel cooker perfect fit, (only for stahlcooker) (3 liter)",
                        "only for stahlcooker) (3 liter", "stahl steel cooker 3"],["5 liter", "5ltr", "butterfly", "prestige", "pigeon", "caustic"]),
     ("SILICON 77",  ["b0gbvl1l8w", "silicon 77 )", "only for pigeon aluminium",
                      "pigeon aluminium pressure cooker"],                                    ["butterfly", "prestige triply", "svachh outer lid", "vinod",
@@ -173,7 +173,7 @@ RULES = [
     ("777",        ["popular", "rubber gasket", "outer lid rubber",
                     "butterfly standard", "butteerfly standard",
                     "hawkiins", "7.5 litre",
-                    "butterfly 10liter", "prestige 777"],                        ["silicon", "silicone", "pigeon", "piigeon", "b0f9vlrwcs", "prestige triply", "stahl", "b0f9vk3dby"]),
+                    "butterfly 10liter", "prestige 777"],                        ["silicon", "silicone", "pigeon", "piigeon", "b0f9vlrwcs", "prestige triply", "stahl", ]),
 
     # Vinod gaskets
     ("VINOD HANDI 1.5L", ["vinod splendid plus handi", "b0g72fs1l1", "b0g72fb1l1",
