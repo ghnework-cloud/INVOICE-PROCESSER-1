@@ -353,8 +353,10 @@ RULES = [
     ("626 = 5PC",     ["sr626sw", "377 silver oxide", "b0f8crxtb4",
                        "626 5pc", "seizaiken sr626sw 377"],                      ["lr1130", "sr416", "sr936", "lr44", "27a_alkaline",
                                                                                    "caustic", "gasket", "courier"]),
-    ("2032 = 2PC",    ["cr2032", "b0dphd3xfv", "cr2032 _2b", "b0dtkd7948",
-                       "3v lithium battery for calculator", "micro cell (2)",
+    ("1620 = 2PC",    ["b0dtkd7948", "h9-iw01-a81j", "3v lithium battery for calculator",
+                       "micro cell (2)", "copy line 3v lithium battery"],       ["cr2032", "lr41", "lr44", "caustic", "gasket", "courier"]),
+    ("2032 = 2PC",    ["cr2032", "b0dphd3xfv", "cr2032 _2b",
+                       
                        "cmos batteries"],                                         ["lr1130", "sr416", "sr936", "lr44", "27a_alkaline",
                                                                                    "1632", "1616", "2430", "caustic", "gasket", "courier"]),
     ("2430 = 2PC",    ["cr2430", "cr-2430", "b0f9vlj6zn",
@@ -485,6 +487,9 @@ RULES = [
     ("LLOYD REMOTE",     ["lloyd", "b0dp9lq45z", "zh/jt-03", "ac-49"],          ["caustic", "gasket", "battery", "courier", "koyla", "charcoal"]),
 
     # Plumber / tap spindle
+    ("LL-2 PC",        ["b0dshz4ybh", "longlife_2", "plumber tap spindle inner part",
+                       "quarter turn for plumber longlife type", "plumber type, 2, count"],
+                                                                               ["caustic", "gasket", "battery", "courier"]),
     ("PLUMBER LONGLIFE", ["plumber", "tap spindle", "longlife", "cartridge",
                           "quarter turn"],                                        ["caustic", "gasket", "battery", "courier"]),
 
@@ -772,7 +777,7 @@ SORT_ORDER = [
     '27 A = 2PC', '27 A = 5PC', '23 A = 2PC', 'LR41 = 4PC', 'LR41 = 25PC', '1130 = 4PC', '1130 = 25PC', '416 = 5PC', 'SR936 = 5PC',
     'LR41 = 10PC', 'LR44 = 50PC', 'LR44 = 25PC', '521 = 5PC', '521 = 2PC', '521 = 2PC + 626 = 5PC',
     '626 = 2PC', '626 = 5PC', '1632 = 2PC', '1616 = 2PC', '721 = 2PC', '916 = 2PC', '920 = 2PC', '927 = 4PC', '927 = 2PC',
-    '2032 = 2PC', '2430 = 2PC',
+    '1620 = 2PC', '2032 = 2PC', '2430 = 2PC',
     'B- 5FT = PC', 'B- 6FT = PC', 'B- 8FT = PC', 'B- 10FT = PC', 'B- 10FT - 2PC', 'B- 12FT = PC',
     'B-12-1PC', 'B-12-2PC', 'B- 12FT + 15FT', 'B- 15FT = PC', 'B- 15FT - 2PC',
     'B-6-4PC', 'MULTI - 6 - 5FT', 'MULTI - 2 - 7FT', 'MULTI - 6 - 6PC', 'MULTI - 2 - 10FT', 'MULTI - 6 - 10FT', 'MULTI - 10FT - 4PC',
@@ -783,7 +788,7 @@ SORT_ORDER = [
     'CAPACITOR 36MFD', 'CAPACITOR 25MFD',
     'HATHWAY REMOTE', 'WHIRLPOOL REMOTE', 'DAIKIN REMOTE',
     'LLOYD REMOTE', 'ACER REMOTE',
-    'WA', 'GAS PIPE', 'PLUMBER LONGLIFE', 'FTA - 4PC', '3PIN PLUG', 'SAFETY VALVE',
+    'WA', 'GAS PIPE', 'LL-2 PC', 'PLUMBER LONGLIFE', 'FTA - 4PC', '3PIN PLUG', 'SAFETY VALVE',
     'ADAPTER HOLDER', 'KAPOOR DANI', 'WHITE STRING', 'ROSE GOLD LIGHTER',
     'BONDI JAHARA', 'MIXER COUPLER', 'SQUARE SHOWER', 'THERMAL ROLL',
     'FTA', 'HALF TURN SPINDLE', 'MARLEX 11 LTR', 'GARBAGE BAG', 'BRUSH', 'INDIAN FLAG', 'PVC TOILET', 'JIGGER SET', 'MISC', 'UNCLASSIFIED',
