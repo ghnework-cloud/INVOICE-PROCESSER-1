@@ -660,8 +660,9 @@ def parse_pdf(filepath):
 
     while i < total:
         text = reader.pages[i].extract_text() or ""
+        tl = text.lower()
         if not text.strip():
-            # Label page
+            # Blank label page — look for invoice on next pages
             label_idx = i
             inv_pages = []
             j = i + 1
@@ -697,6 +698,24 @@ def parse_pdf(filepath):
                     'text': inv_text,
                 })
             i = j + 1
+        elif 'tax invoice' in tl:
+            # Invoice page without blank label before it — process directly
+            m = re.search(r'invoice number\s*[:\s]+([A-Z0-9\-]+)', text, re.IGNORECASE)
+            if m:
+                inv_num = m.group(1).strip()
+                qty = extract_qty(text)
+                prod, confidence, reason = auto_classify(inv_num, text)
+                groups.append({
+                    'label': i,
+                    'invoices': [i],
+                    'inv_num': inv_num,
+                    'product': prod,
+                    'qty': qty,
+                    'confidence': confidence,
+                    'reason': reason,
+                    'text': text,
+                })
+            i += 1
         else:
             i += 1
 
