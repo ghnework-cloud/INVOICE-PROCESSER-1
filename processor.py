@@ -173,7 +173,7 @@ RULES = [
     ("777",        ["popular", "rubber gasket", "outer lid rubber",
                     "butterfly standard", "butteerfly standard",
                     "hawkiins", "7.5 litre",
-                    "butterfly 10liter", "prestige 777"],                        ["silicon", "silicone", "pigeon", "piigeon", "b0f9vlrwcs", "prestige triply", "stahl", ]),
+                    "butterfly 10liter", "prestige 777"],                        ["silicon", "silicone", "pigeon", "piigeon", "b0f9vlrwcs", "prestige triply", "stahl", "b0f9vk3dby"]),
 
     # Vinod gaskets
     ("VINOD HANDI 1.5L", ["vinod splendid plus handi", "b0g72fs1l1", "b0g72fb1l1",
@@ -353,7 +353,8 @@ RULES = [
     ("626 = 5PC",     ["sr626sw", "377 silver oxide", "b0f8crxtb4",
                        "626 5pc", "seizaiken sr626sw 377"],                      ["lr1130", "sr416", "sr936", "lr44", "27a_alkaline",
                                                                                    "caustic", "gasket", "courier"]),
-    ("2032 = 2PC",    ["cr2032", "b0dphd3xfv", "cr2032 _2b",
+    ("2032 = 2PC",    ["cr2032", "b0dphd3xfv", "cr2032 _2b", "b0dtkd7948",
+                       "3v lithium battery for calculator", "micro cell (2)",
                        "cmos batteries"],                                         ["lr1130", "sr416", "sr936", "lr44", "27a_alkaline",
                                                                                    "1632", "1616", "2430", "caustic", "gasket", "courier"]),
     ("2430 = 2PC",    ["cr2430", "cr-2430", "b0f9vlj6zn",
