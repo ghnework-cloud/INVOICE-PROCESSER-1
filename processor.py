@@ -223,7 +223,8 @@ RULES = [
 
     # Myntra / MYN bags — single size
     ("MY 8x11",    ["myn paper courier bag 8x11", "8x 11 )", "b0hfbxhw52", "my 8x 11 pvc",
-                      "b0dnqk8z8b", "paper courier bag 8x11 _100", "myn plastic courier bag 8x11"],                    ["tsb", "nsb", "caustic", "gasket", "13x14", "14x18", "14x16", "17x22", "11x13"]),
+                      "b0dnqk8z8b", "b0dsl2dt3v", "plain myt courier bags", "plain myt courier",
+                      "paper courier bag 8x11 _100", "myn plastic courier bag 8x11"],                    ["tsb", "nsb", "caustic", "gasket", "13x14", "14x18", "14x16", "17x22", "11x13"]),
     ("MY 11x13",   ["myn paper courier bag 11x13", "b0dnqksnn4", "b0dnqh7r3c",
                     "11 x13 myt", "11x13 myt",
                     "paper courier bag 11x13_250", "11x13_250"],                 ["tsb", "nsb", "caustic", "gasket", "8x11", "13x14", "14x16", "17x22"]),
@@ -557,6 +558,8 @@ RULES = [
                        "bathroom toilet seat hinge set", "stainless steel seat cover screw hinges",
                        "l type for european toilet", "western toilet seat covers 2 pieces"],
                                                                                ["caustic", "gasket", "battery", "courier", "brush"]),
+    ("JIGGER SET",    ["b0f2yxg757", "bartending set", "bar spoon",
+                       "stainless steel bar spoon", "professional bartending"],  ["caustic", "gasket", "battery", "courier", "bungee"]),
     ("MISC",          ["screen brush", "mosquito net", "mesh cleaning brush",
                        "b0gkqnc8l8", "24-bta0-8tio", "tap aerator",
                        "water tap aerator", "b0fdwydjry", "foam flow",
@@ -782,7 +785,7 @@ SORT_ORDER = [
     'WA', 'GAS PIPE', 'PLUMBER LONGLIFE', 'FTA - 4PC', '3PIN PLUG', 'SAFETY VALVE',
     'ADAPTER HOLDER', 'KAPOOR DANI', 'WHITE STRING', 'ROSE GOLD LIGHTER',
     'BONDI JAHARA', 'MIXER COUPLER', 'SQUARE SHOWER', 'THERMAL ROLL',
-    'FTA', 'HALF TURN SPINDLE', 'MARLEX 11 LTR', 'GARBAGE BAG', 'BRUSH', 'INDIAN FLAG', 'PVC TOILET', 'MISC', 'UNCLASSIFIED',
+    'FTA', 'HALF TURN SPINDLE', 'MARLEX 11 LTR', 'GARBAGE BAG', 'BRUSH', 'INDIAN FLAG', 'PVC TOILET', 'JIGGER SET', 'MISC', 'UNCLASSIFIED',
 ]
 
 
