@@ -86,6 +86,8 @@ RULES = [
                    "pack of 10 roll (100 disc)", "b0f2hm8klg", "v8-nrs9-1odr",
                    "instant-ignite burn", "100 disc)"],                         ["caustic", "koyla", "gasket", "battery", "courier",
                                                                                   "al-afandi", "30 discs", "50 discs", "60 discs", "koyla briquette"]),
+    ("K-1KG",     ["b0dr2nb6z2", "charcoal koyla _1kg", "dehumidification_pack of 1kg",
+                   "barbeque", "grilling", "broiling"],                         ["½ kg", "half kg", "caustic", "gasket"]),
     ("K ½ KG",    ["koyla", "wood charcoal", "charcoal koyla", "lump charcoal",
                    "koyla briquette", "natural lump charcoal"],                  ["caustic", "gasket", "battery", "courier", "hookah", "dhoop", "tablet"]),
 
@@ -768,7 +770,7 @@ SORT_ORDER = [
     'AFANDI 96', 'YELLOW - 30', 'YELLOW - 50', 'YELLOW - 100',
     'K-30', 'K-50', 'K-60', 'K-100', 'K 2KG',
     '12 CLIPS', '36 STEEL CLIPS', '18 STEEL CLIPS',
-    'K-1KG', 'K ½ KG',
+    'K-1KG', 'K-1KG', 'K ½ KG',
     '77', 'STAHL 5L', 'STAHL 3L', 'SILICON 77', 'SILICON 777',
     'PRESTIGE HANDI 2L', 'PRESTIGE 4L', 'PRESTIGE 8L', 'PRESTIGE TRIPLY 3L', 'PRESTIGE TRIPLY 5L',
     'POPULAR 4/5', '1.5 LITER INNER LID 2 PC',
