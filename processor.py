@@ -998,11 +998,23 @@ def build_output_pdf(input_path, output_path, groups):
 
     groups_sorted = sorted(groups, key=sort_key)
 
+    def is_footer_page(page):
+        """Return True if this is a Page 2 of 2 footer/continuation page with no invoice content."""
+        text = (page.extract_text() or "").lower()
+        # Footer page has 'page 2 of 2' or similar and NO invoice number
+        has_continuation = bool(re.search(r'page [2-9] of \d+', text))
+        has_invoice_num = 'invoice number' in text or 'tax invoice' in text
+        is_only_footer = has_continuation and not has_invoice_num
+        return is_only_footer
+
     writer = _W()
     for g in groups_sorted:
         writer.add_page(reader.pages[g['label']])
         for inv_idx in g['invoices']:
             inv_page = reader.pages[inv_idx]
+            # Skip footer/continuation pages (Page 2 of 2 with no invoice content)
+            if is_footer_page(inv_page):
+                continue
             pw = float(inv_page.mediabox.width)
             ph = float(inv_page.mediabox.height)
             overlay = create_overlay(pw, ph, g['product'], g['qty'])
