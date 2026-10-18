@@ -169,8 +169,8 @@ def build_varsha_excel(pdf_bytes, filename_stem):
     while i < len(pages):
         text = pages[i].extract_text() or ""
 
-        # Detect invoice page (has "Tax Invoice" and "Sold By")
-        if "Tax Invoice" in text and ("VARSHA HARDIKKUMAR RAVAL" in text.upper() or "Sold By" in text):
+        # Detect ONLY Varsha's invoice pages
+        if "Tax Invoice" in text and "VARSHA HARDIKKUMAR RAVAL" in text.upper():
             # Extract invoice date
             date_match = re.search(r'Invoice Date\s*[:\-]?\s*(\d{1,2}[./\-]\d{1,2}[./\-]\d{4})', text)
             if not date_match:
