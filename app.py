@@ -139,7 +139,7 @@ def is_varsha_pdf(pdf_bytes):
         import io
         from pypdf import PdfReader
         reader = PdfReader(io.BytesIO(pdf_bytes))
-        for page in reader.pages[:10]:  # check first 10 pages
+                for page in reader.pages:  # check ALL pages
             text = page.extract_text() or ""
             if "VARSHA HARDIKKUMAR RAVAL" in text.upper():
                 return True
