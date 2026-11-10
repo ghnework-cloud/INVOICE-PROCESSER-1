@@ -963,8 +963,9 @@ def process_pdf(input_path, output_path):
             pw = float(inv_page.mediabox.width)
             ph = float(inv_page.mediabox.height)
             overlay = create_overlay(pw, ph, g['product'], g['qty'])
-            inv_page.merge_page(overlay.pages[0])
             writer.add_page(inv_page)
+            # pypdf 7.0+: merge after adding to writer
+            writer.pages[-1].merge_page(overlay.pages[0])
 
     with open(output_path, 'wb') as f:
         writer.write(f)
@@ -999,13 +1000,21 @@ def build_output_pdf(input_path, output_path, groups):
     groups_sorted = sorted(groups, key=sort_key)
 
     def is_footer_page(page):
-        """Return True if this is a Page 2 of 2 footer/continuation page with no invoice content."""
-        text = (page.extract_text() or "").lower()
-        # Footer page has 'page 2 of 2' or similar and NO invoice number
-        has_continuation = bool(re.search(r'page [2-9] of \d+', text))
-        has_invoice_num = 'invoice number' in text or 'tax invoice' in text
-        is_only_footer = has_continuation and not has_invoice_num
-        return is_only_footer
+        """Return True if this is a blank/leftover page with no real invoice content."""
+        text = (page.extract_text() or "").strip()
+        tl = text.lower()
+        # Must have meaningful invoice content to keep
+        has_invoice_num  = 'invoice number' in tl or 'tax invoice' in tl
+        has_sold_by      = 'sold by' in tl
+        has_order_num    = 'order number' in tl or 'order id' in tl
+        has_real_content = has_invoice_num or has_sold_by or has_order_num
+        # Delete if: blank page OR "Page N of N" continuation with no real content
+        if not has_real_content:
+            return True
+        has_continuation = bool(re.search(r'page [2-9] of \d+', tl))
+        if has_continuation and not has_invoice_num:
+            return True
+        return False
 
     writer = _W()
     for g in groups_sorted:
@@ -1018,8 +1027,9 @@ def build_output_pdf(input_path, output_path, groups):
             pw = float(inv_page.mediabox.width)
             ph = float(inv_page.mediabox.height)
             overlay = create_overlay(pw, ph, g['product'], g['qty'])
-            inv_page.merge_page(overlay.pages[0])
             writer.add_page(inv_page)
+            # pypdf 7.0+: merge after adding to writer
+            writer.pages[-1].merge_page(overlay.pages[0])
 
     with open(output_path, 'wb') as f:
         writer.write(f)
